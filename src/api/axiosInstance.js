@@ -3,7 +3,7 @@ import axios from 'axios';
 const axiosInstance = axios.create({
     baseURL:
     process.env.NODE_ENV === 'production'
-        ? '/api' // Production uses relative URL
+        ? 'https://affworld-assignment-backend.vercel.app/api' // Production uses relative URL
         : 'http://localhost:5000/api', // Development uses local backend 
         headers: {
         'Content-Type': 'application/json',
